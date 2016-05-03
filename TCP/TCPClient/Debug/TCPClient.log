@@ -1,0 +1,17 @@
+﻿生成启动时间为 2016/5/3 11:49:28。
+     1>项目“C:\Users\Jesse\Documents\Files\Homework\2015B\DataComucation\Winsock-Project\TCP\TCPClient\TCPClient.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:prompt TCPEchoClientWS.c
+         TCPEchoClientWS.c
+     1>c:\users\jesse\documents\files\homework\2015b\datacomucation\winsock-project\tcp\tcpclient\tcpechoclientws.c(87): warning C4013: “gets”未定义；假设外部返回 int
+     1>c:\users\jesse\documents\files\homework\2015b\datacomucation\winsock-project\tcp\tcpclient\tcpechoclientws.c(39): warning C4101: “echoString”: 未引用的局部变量
+     1>c:\users\jesse\documents\files\homework\2015b\datacomucation\winsock-project\tcp\tcpclient\tcpechoclientws.c(44): warning C4101: “out_buff”: 未引用的局部变量
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Jesse\Documents\Files\Homework\2015B\DataComucation\Winsock-Project\TCP\Debug\TCPClient.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Jesse\Documents\Files\Homework\2015B\DataComucation\Winsock-Project\TCP\Debug\TCPClient.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Jesse\Documents\Files\Homework\2015B\DataComucation\Winsock-Project\TCP\Debug\TCPClient.lib" /MACHINE:X86 Debug\DieWithErrorWS.obj
+         Debug\TCPEchoClientWS.obj
+         TCPClient.vcxproj -> C:\Users\Jesse\Documents\Files\Homework\2015B\DataComucation\Winsock-Project\TCP\Debug\TCPClient.exe
+     1>已完成生成项目“C:\Users\Jesse\Documents\Files\Homework\2015B\DataComucation\Winsock-Project\TCP\TCPClient\TCPClient.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:01.10
