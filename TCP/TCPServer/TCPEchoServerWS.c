@@ -45,6 +45,7 @@ void main(int argc, char *argv[])
     if ((servSock = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP)) < 0)
         DieWithError("socket() failed");
 
+
     /* Construct local address structure */
     memset(&echoServAddr, 0, sizeof(echoServAddr));   /* Zero out structure */
     echoServAddr.sin_family = AF_INET;                /* Internet address family */
@@ -58,6 +59,31 @@ void main(int argc, char *argv[])
     /* Mark the socket so it will listen for incoming connections */
     if (listen(servSock, MAXPENDING) < 0)
         DieWithError("listen() failed");
+
+        // int 		       rc;              // Return code for setsockopt()
+        // int 		       newTCPWin;       // TCP window size - as requested
+        // int 		       outTCPWin;       // TCP window size - as set
+        // int	               len;   	     	// The size, in bytes, of the buffer pointed to by the socket 'option'value parameter
+        //
+        //
+        // // adjust TCP window size (SO_RCVBUF size) for this socket only
+        // newTCPWin = 8192;
+        // len=sizeof(int);
+        //
+        // // set SO_RCVBUF
+        // rc = setsockopt(servSock, SOL_SOCKET, SO_RCVBUF,(char *)&newTCPWin, len);
+        // if ( rc < 0 )
+        //     { printf("setsockopt() failed...\n"); exit(1);}
+        //
+        // // check if SO_RCVBUF was set correctly
+        // rc = getsockopt(servSock, SOL_SOCKET, SO_RCVBUF, (char *)&outTCPWin, &len);
+        // if ( rc < 0 )
+        //     printf("getsockopt() failed: with return code = %d\n", WSAGetLastError());
+        // printf("Initial TCP Window size is: %d.\n", outTCPWin);
+        // if ( outTCPWin != newTCPWin )
+        //     printf( "WARNING: Attempted to set window size to: %d, but got %d.", outTCPWin, newTCPWin);
+
+
 
     for (;;) /* Run forever */
     {
