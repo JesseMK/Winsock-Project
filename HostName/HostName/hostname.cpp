@@ -45,7 +45,7 @@ int main(int argc, char *argv[]) {
 	struct in_addr addr;
 	DWORD dwError;
 	char **pAlias;
-	int i;
+	int i = 0;
 
 	if (remoteHost == NULL) {
 		dwError = WSAGetLastError();
